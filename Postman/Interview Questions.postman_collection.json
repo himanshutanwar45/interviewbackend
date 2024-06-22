@@ -1,0 +1,278 @@
+{
+	"info": {
+		"_postman_id": "57d78da8-f718-4f51-96f4-4f4787388d18",
+		"name": "Interview Questions",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28877175",
+		"_collection_link": "https://sql-team.postman.co/workspace/SQL-Team-Workspace~e6332209-3c29-4790-8237-fab76af98909/collection/28877175-57d78da8-f718-4f51-96f4-4f4787388d18?action=share&source=collection_link&creator=28877175"
+	},
+	"item": [
+		{
+			"name": "Interview Question",
+			"item": [
+				{
+					"name": "QuestionsAnswer",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"types\":\"MSSQL\",\r\n    \"question\":\"What is query ?\",\r\n    \"answer\":\"You\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/questions/addquestions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"questions",
+								"addquestions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get Questions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"types\":\"MSSQL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/questions/getquestions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"questions",
+								"getquestions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Add Users Questions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY2OTMzZjI2YWMzN2VhMDI1ODMyMTFlIn0sImlhdCI6MTcxODE3NDMwMH0.36nDRknF-Pa_mF-mrB8q6S3WQobYNktAZqLdfwEmrwk"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"types\":\"MSSQL\",\r\n    \"question\":\"What is the use of stuff function?\",\r\n    \"createdBy\":\"666933f26ac37ea02583211e\",\r\n    \"updatedBy\":\"666933f26ac37ea02583211e\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/questions/adduserquestions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"questions",
+								"adduserquestions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get User Questions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY2OTMzZjI2YWMzN2VhMDI1ODMyMTFlIn0sImlhdCI6MTcxODE3NDMwMH0.36nDRknF-Pa_mF-mrB8q6S3WQobYNktAZqLdfwEmrwk"
+							},
+							{
+								"key": "content-type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"types\":\"MSSQL\"\r\n\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/questions/getuserquestions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"questions",
+								"getuserquestions"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Get All Users Questions",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "auth-token",
+								"value": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjY2NjlkZWFiY2IxYWY2ZTdkY2Y5ODA0In0sImlhdCI6MTcxODE4MTk0NH0.8o6CC7a-jqpx6TsqB4GhXFpq1PPPmjp_jAfUbLcRrm0"
+							},
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"types\":\"MSSQL\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/questions/getalluserquestions",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"questions",
+								"getalluserquestions"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Login",
+			"item": [
+				{
+					"name": "Create Users",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"eemail\":\"sandeep.maheshwari@invia.co.in\",\r\n    \"name\":\"Sandeep Maheshwari\",\r\n    \"epassword\":\"12345678\",\r\n    \"conpass\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/createuser",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"createuser"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "Login",
+					"request": {
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"email\":\"himanshu.tanwar@invia.co.in\",\r\n    \"password\":\"12345678\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "http://localhost:5000/api/auth/login",
+							"protocol": "http",
+							"host": [
+								"localhost"
+							],
+							"port": "5000",
+							"path": [
+								"api",
+								"auth",
+								"login"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
