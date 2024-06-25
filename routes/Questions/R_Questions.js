@@ -32,9 +32,9 @@ router.post('/addquestions', [
 
         const updatedQuestion = await M_UsersQuestion.findOneAndUpdate({ questions: question }, { $set: updateEntry }, { new: true });
 
-        if (!updatedQuestion) {
-            return res.status(404).json({ success, error: 'Question not found in users question collection' });
-        }
+        // if (!updatedQuestion) {
+        //     return res.status(404).json({ success, error: 'Question not found in users question collection' });
+        // }
 
         await M_Questions.insertMany({
             questions: question,
